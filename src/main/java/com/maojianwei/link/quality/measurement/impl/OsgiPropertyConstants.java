@@ -13,8 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-/**
- * Link Quality Measurement Implementation.
- */
 package com.maojianwei.link.quality.measurement.impl;
+
+public final class OsgiPropertyConstants {
+    private OsgiPropertyConstants() {}
+
+    public static final String PROBE_INTERVAL = "probeInterval";
+    public static final int PROBE_INTERVAL_DEFAULT = 3000; // ms
+
+    public static final String CALCULATE_INTERVAL = "calculateInterval";
+    public static final int CALCULATE_INTERVAL_DEFAULT = 3000; // ms
+
+    public static final String LATENCY_AVERAGE_SIZE = "latencyAverageSize";
+    public static final int LATENCY_AVERAGE_SIZE_DEFAULT = 5;
+}
