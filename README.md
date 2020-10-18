@@ -1,6 +1,6 @@
 # ONOS_Link_Quality_Measurement
 
-An active method to measure link quality, latency(delay) / jitter / packet loss ratio , performed by ONOS 
+An active method to measure link quality: latency(delay) / jitter / packet loss ratio. Performed by ONOS controller.
 
 If you like this project, please click **Star** at the top-right corner, thanks for your support :)
 
@@ -11,7 +11,7 @@ Discuss on ONOS mailing list:
 
 ## Update Note
 
-2020.10.18 Beta version release, support link delay measurement, based on ONOS **2.5.0-SNAPSHOT** version, backed by Apache Karaf **4.2.9** & JDK **11**.
+**2020.10.18** Support link delay measurement, based on ONOS **2.5.0-SNAPSHOT** version, backed by Apache Karaf **4.2.9** & JDK **11**.
 
 .
 
@@ -34,7 +34,7 @@ ONOS does not support to be built and imported to IDE(Intellij IDEA) by Maven(po
 
 ## Backward Compatibility
 
-You can find all milestone versions at [Release](https://github.com/MaoJianwei/ONOS_LoadBalance_Routing_Forward/releases) page.
+You can find all milestone versions at [Release](https://github.com/MaoJianwei/ONOS_Link_Quality_Measurement/releases) page.
 
 .
 
@@ -42,4 +42,4 @@ You can find all milestone versions at [Release](https://github.com/MaoJianwei/O
 
 Long term support(LTS) from 2020.10.18, by:
 
-:) [Jianwei Mao @ BUPT FNLab](https://www.maojianwei.com/) - ONOS China Ambassador - MaoJianwei2020@gmail.com / MaoJianwei2012@126.com 
+:) [Jianwei Mao @ BUPT FNLab](https://www.maojianwei.com/) - ONOS China Ambassador - MaoJianwei2012@126.com / MaoJianwei2020@gmail.com
