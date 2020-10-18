@@ -16,7 +16,12 @@ Discuss on ONOS mailing list:
 .
 
 ## Demo
-
+![demo-topo](https://raw.githubusercontent.com/MaoJianwei/ONOS_Link_Quality_Measurement/master/docs/demo-topo.jpg)
+![link-latency-show](https://raw.githubusercontent.com/MaoJianwei/ONOS_Link_Quality_Measurement/master/docs/link-latency-show.jpg)
+```
+sudo tc qdisc add dev s1-eth2 root netem delay 100ms
+sudo tc qdisc add dev s2-eth3 root netem delay 300ms
+```
 .
 
 ## Latest Instruction to Compile
