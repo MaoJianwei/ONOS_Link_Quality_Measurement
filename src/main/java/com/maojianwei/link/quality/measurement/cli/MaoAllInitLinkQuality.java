@@ -16,6 +16,6 @@ public class MaoAllInitLinkQuality extends AbstractShellCommand {
     protected void doExecute() {
         MaoLinkQualityService service = getService(MaoLinkQualityService.class);
         print("====== Link Latencies (init) ======");
-        service.getAllInitLatencies().forEach((k, v) -> print("%s --- %d", k.toString(), v));
+        service.getAllInitLatencies().forEach((k, v) -> print("%s --- %dms", k.toString(), v));
     }
 }

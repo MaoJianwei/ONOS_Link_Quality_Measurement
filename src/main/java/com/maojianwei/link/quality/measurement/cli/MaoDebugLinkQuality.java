@@ -16,11 +16,11 @@ public class MaoDebugLinkQuality extends AbstractShellCommand {
     protected void doExecute() {
         MaoLinkQualityService service = getService(MaoLinkQualityService.class);
         print("====== Link Latencies ======");
-        service.getAllLinkLatencies().forEach((k, v) -> print("%s --- %d", k.toString(), v));
+        service.getAllLinkLatencies().forEach((k, v) -> print("%s --- %dms", k.toString(), v));
         print("====== Link Latencies (init) ======");
-        service.getAllInitLatencies().forEach((k, v) -> print("%s --- %d", k.toString(), v));
+        service.getAllInitLatencies().forEach((k, v) -> print("%s --- %dms", k.toString(), v));
         print("====== Link Latencies (control) ======");
-        service.getAllControlLatencies().forEach((k, v) -> print("%s --- %d", k.toString(), v));
+        service.getAllControlLatencies().forEach((k, v) -> print("%s --- %dms", k.toString(), v));
         print("====== Link Latencies (record) ======");
         service.getDebugLinkLatancies().forEach((k, v) -> print("%s --- %s", k.toString(), v));
     }
