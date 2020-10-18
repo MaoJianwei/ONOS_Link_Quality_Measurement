@@ -1,0 +1,27 @@
+COMPILE_DEPS = CORE_DEPS + JACKSON + REST + CLI + [
+    "//core/common:onos-core-common",
+    #    "//drivers/default:onos-drivers-default",
+]
+
+osgi_jar_with_tests(
+    api_description = "BigMao Radio Station REST API v1.0, for link quality measurement",
+    api_package = "com.maojianwei.link.quality.measurement",
+    api_title = "BigMao Radio Station REST API v1.0",
+    api_version = "/onos/v1/Mao",
+    karaf_command_packages = ["com.maojianwei.link.quality.measurement.cli"],
+    web_context = "/onos/Mao",
+    deps = COMPILE_DEPS,
+)
+
+REQUIRE_APPS = [
+    #    "org.onosproject.proxyarp",
+]
+
+onos_app(
+    app_name = "com.maojianwei.link.quality.measurement",
+    category = "Monitoring",
+    description = "Mao Link Quality Measurement",
+    required_apps = REQUIRE_APPS,
+    title = "Mao Link Quality Measurement",
+    url = "https://www.maojianwei.com",
+)
